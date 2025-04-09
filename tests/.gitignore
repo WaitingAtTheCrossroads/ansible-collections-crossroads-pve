@@ -1,1 +1,4 @@
 output/
+
+# `ansible-test integration` is auto-generating a file with hard-coded paths
+integration/inventory

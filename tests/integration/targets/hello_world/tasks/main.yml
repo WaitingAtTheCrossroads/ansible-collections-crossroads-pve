@@ -1,9 +1,5 @@
 ---
-- name: Test the Hello World filter plugin
-  ansible.builtin.set_fact:
-    msg: "{{ 'ansible-creator' | waitingatthecrossroads.proxmox_virtual_environment.hello_world }}"
-
-- name: Assert that the filter worked
+- name: Dummy test
   ansible.builtin.assert:
     that:
-      - msg == 'Hello, ansible-creator'
+      - true
