@@ -1,5 +1,7 @@
 # Waitingatthecrossroads Proxmox_virtual_environment Collection
 
+[![CI](https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve/actions/workflows/tests.yml/badge.svg)](https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve/actions/workflows/tests.yml)
+
 This repository contains the
 `waitingatthecrossroads.proxmox_virtual_environment` Ansible Collection.
 
