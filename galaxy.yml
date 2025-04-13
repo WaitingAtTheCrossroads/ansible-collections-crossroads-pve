@@ -1,19 +1,15 @@
 ---
-# This collection is initialized by https://github.com/ansible/ansible-creator
-# 25.3.1
+# Copyright: Contributors to the Ansible project
+# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-# See
-# https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html
-
-namespace: "waitingatthecrossroads"
-name: "proxmox_virtual_environment"
+namespace: waitingatthecrossroads
+name: proxmox_virtual_environment
 version: 1.0.0
 readme: README.md
 authors:
   - WaitingAtTheCrossroads <waitingatthecrossroads@proton.me>
-
-description: >-
-  The best darn Proxmox Virtual Environment automation there ever was!
+description: The best darn Proxmox Virtual Environment automation there ever was!
 license_file: LICENSE
 tags:
   - infrastructure
@@ -22,27 +18,12 @@ tags:
   - pve
   - virtualization
   - hypervisor
-
 dependencies:
-  "ansible.utils": "*" # note: "*" selects the latest version available
-
+  ansible.utils: "*"
 repository: https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve
 documentation: https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve/blob/main/README.md
 homepage: https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve
 issues: https://github.com/WaitingAtTheCrossroads/ansible-collections-crossroads-pve/issues
-
-# A list of file glob-like patterns used to filter any files or directories that
-# should not be included in the build artifact. A pattern is matched from the
-# relative path of the file or directory of the collection directory. This uses
-# 'fnmatch' to match the files or directories. Some directories and files like
-# 'galaxy.yml', '*.pyc', '*.retry', and '.git' are always filtered. Mutually
-# exclusive with 'manifest'
 build_ignore:
   - .gitignore
   - changelogs/.plugin-cache.yaml
-# A dict controlling use of manifest directives used in building the collection artifact. The key 'directives' is a
-# list of MANIFEST.in style
-# L(directives,https://packaging.python.org/en/latest/guides/using-manifest-in/#manifest-in-commands). The key
-# 'omit_default_directives' is a boolean that controls whether the default directives are used. Mutually exclusive
-# with 'build_ignore'
-# manifest: null

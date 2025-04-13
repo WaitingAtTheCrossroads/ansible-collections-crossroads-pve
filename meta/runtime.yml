@@ -1,2 +1,13 @@
 ---
+# Copyright: Contributors to the Ansible project
+# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# DOCS
+# https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_structure.html#runtime-yml
+
+action_groups:
+  api:
+    - waitingatthecrossroads.proxmox_virtual_environment.storage_info
+
 requires_ansible: ">=2.15.0"
